@@ -23,7 +23,7 @@ header {
 
 header h1 {
   padding-top: 5px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Yeseva One", serif;
   line-height: 20px;
   text-align: center;
@@ -82,33 +82,96 @@ main > section {
   width: 100%;
   height: 100vh;
   position: relative;
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 20px;
 }
 
-.visual2 p img {
+.view a {
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+.visual2 .me img {
   width: 500px;
   position: absolute;
   bottom: 0;
-  animation-duration: 3s;
-  animation-name: slideinimg;
 }
 
 .visual2 .inner {
-  border: 2px solid #333;
   width: 1518px;
   height: 700px;
-  border-radius: 50px;
   margin: 100px 0 100px 300px;
   display: flex;
   justify-content: space-around;
+  padding-left: 100px;
 }
 
 .inner div {
   width: 400px;
   height: 600px;
-  border: 1px solid #333;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
+.inner .pro1 {
+  padding-left: 100px;
+}
+
+.inner .pro2,
+.inner .pro3 {
+  padding-top: 50px;
+}
+
+.inner h2,
+h3,
+p {
+  padding-bottom: 10px;
+}
+
+.inner p span {
+  display: inline-block;
+  width: 140px;
+}
+
+.inner .pro3 img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.inner h2,
+.inner h3 {
+  position: relative;
+}
+
+.pro1 h2::after {
+  display: block;
+  width: 160px;
+  height: 20px;
+  background-color: #f2eee9;
+  position: absolute;
+  top: 70px;
+  z-index: -1;
+}
+
+.inner h3::after {
+  display: block;
+  width: 135px;
+  height: 20px;
+  background-color: #f2eee9;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+}
+
+.inner .pro1 .coment::after {
+  width: 100px;
+}
+
+.inner .pro3 .skills::after {
+  width: 60px;
+}
 /*section3*/
 
 .visual3 {
@@ -132,19 +195,37 @@ main > section {
 }
 
 .visual3 .box {
-  border: 1px solid #333;
+  border-radius: 20px;
   width: 600px;
   height: 700px;
   padding: 20px;
+  background-color: #f2eee9;
 }
 
-.visual3 .view {
+.visual3 .slide1,
+.visual3 .slide2,
+.visual3 .slide3 {
   width: 560px;
   height: 300px;
-  border: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.visual3 .slide1 > a,
+.visual3 .slide2 > a,
+.visual3 .slide3 > a {
+  display: block;
+  width: 560px;
+  height: 300px;
+}
+
+.visual3 .slide1 {
   background: url(../images/sanrio.png) no-repeat;
   background-size: 560px;
-  margin-bottom: 20px;
+}
+
+.visual3 .slide2 {
+  background: url(../images/challenge.png) no-repeat;
+  background-size: 560px;
 }
 
 .visual3 .boxInner .title {
@@ -206,7 +287,7 @@ main > section {
 } /*버튼 왼쪽*/
 
 .slick-next {
-  right: 0;
+  right: 20px;
 } /*버튼 오른쪽*/
 
 .slick-arrow:before {
@@ -215,12 +296,14 @@ main > section {
 
 .slick-prev:before {
   content: "\e93b";
-  font-size: 20px;
+  font-size: 50px;
+  color: #f2eee9;
 }
 
 .slick-next:before {
   content: "\e93e";
-  font-size: 20px;
+  font-size: 50px;
+  color: #f2eee9;
 }
 
 .containers .slick-dots {

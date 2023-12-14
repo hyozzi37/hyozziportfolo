@@ -161,3 +161,8 @@ a {
 #skipNavi a:active {
   top: 0;
 }
+
+::before,
+::after {
+  content: "";
+}
