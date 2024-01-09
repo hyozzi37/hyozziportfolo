@@ -219,6 +219,11 @@ p {
 }
 
 .visual3 .slide1 {
+  background: url(../images/harim.png) no-repeat;
+  background-size: 560px;
+}
+
+.visual3 .slide3 {
   background: url(../images/sanrio.png) no-repeat;
   background-size: 560px;
 }
@@ -255,6 +260,7 @@ p {
 
 .coment p {
   margin-right: 10px;
+  padding-top: 10px;
 }
 
 /*slide*/
